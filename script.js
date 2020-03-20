@@ -46,6 +46,29 @@ $(document).ready(function() {
 
 
 
+    //color coding the time boxes
+    var todaysDate = moment().format("dddd, MMMM Do YYYY");
+
+    console.log(todaysDate);
+
+    $("#currentDay").text(todaysDate);
+
+    var currentHour = moment().format("H");
+
+    console.log(currentHour);
+
+    currentHour = parseInt(currentHour);
+
+    console.log(currentHour);
+
+    var t1 = $(".t1").text();
+
+    var t1 = parseInt(t1);
+
+    console.log(t1);
+
+
+
 
 
 
