@@ -157,16 +157,27 @@ $(document).ready(function() {
 
 
 
+    //arrays to hold both the 
     
-    //for loop to run if statements for each of the different hour boxes
+    var timeBlocks = [t9, t10, t11, t12, t1, t2, t3, t4, t5];
 
-    if (t9 === currentHour) {
-        $(".d9").addClass("present");
-    } else if(t9 < currentHour) {
-        $(".d9").addClass("past");
-    } else {
-        $(".d9").addClass("future");
+    var plannerBlocks = [".d9", ".d10", ".d11", ".d12", ".d1", ".d2", ".d3", ".d4", ".d5"];
+    
+    
+    
+    //loop through the calendar blocks and assign classes to color the planner appropriately
+
+    for (var i = 0; i < timeBlocks.length; i++) {
+
+        if (timeBlocks[i] === currentHour) {
+            $(plannerBlocks[i]).addClass("present");
+        } else if(timeBlocks[i] < currentHour) {
+            $(plannerBlocks[i]).addClass("past");
+        } else {
+            $(plannerBlocks[i]).addClass("future");
+        }
     }
+
 
 
 
