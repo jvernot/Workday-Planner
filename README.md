@@ -1,4 +1,4 @@
-This object of this project was to create a workday planner that can be updated by the user and is in sync with the current time.
+This object of this project was to create a workday planner that can be updated by the user and is in sync with the current time. the user can place their daily notes in the planner and hit the save button. These notes will persist on the page until deleted.
 
 
 
